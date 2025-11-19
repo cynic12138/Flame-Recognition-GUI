@@ -1,0 +1,26 @@
+# 火焰监控系统依赖包
+
+# 图像处理库
+opencv-python==4.8.0.76
+Pillow==10.2.0
+numpy==1.26.4
+
+# 网络请求库
+requests==2.31.0
+
+# 注意：以下为Python标准库，通常不需要单独安装
+# tkinter - GUI界面库（Python标准库）
+# threading - 多线程支持（Python标准库）
+# queue - 队列支持（Python标准库）
+# json - JSON处理（Python标准库）
+# logging - 日志记录（Python标准库）
+# os - 操作系统接口（Python标准库）
+# re - 正则表达式（Python标准库）
+# time - 时间处理（Python标准库）
+# datetime - 日期时间处理（Python标准库）
+# sys - 系统相关参数（Python标准库）
+# signal - 信号处理（Python标准库）
+# copy - 复制操作（Python标准库）
+
+# 安装命令：
+# pip install -r requirements.txt
