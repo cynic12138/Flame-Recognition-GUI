@@ -1326,7 +1326,7 @@ class FlameMonitorGUI:
             self.root.after_idle(self._queue_processor)
             # 使用真实RTSP流进行监控分析
             # 默认使用一个示例RTSP URL，实际使用时应替换为真实的RTSP流地址
-            rtsp_url = "rtsp://admin:a12345678@192.168.10.203:554/Streaming/Channels/4701"
+            rtsp_url = "替换为实际rtsp地址"
             # 调用analyzer的analyze_rtsp_stream方法进行实时分析
             self.analyzer.analyze_rtsp_stream(rtsp_url, interval_seconds=5)
         except Exception as e:
@@ -1343,7 +1343,7 @@ def main():
         API_KEY = "your_api_key_here"
 
     # 获取RTSP URL配置
-    rtsp_url = "rtsp://admin:a12345678@192.168.10.203:554/Streaming/Channels/4701"
+    rtsp_url = "替换为实际rtsp地址"
     if not rtsp_url:
         print("警告: 未找到RTSP_URL环境变量，将使用默认值")
         print("请设置RTSP_URL环境变量以使用真实的RTSP流地址")
@@ -1373,7 +1373,7 @@ def main():
         # 命令行模式下使用真实RTSP流
         try:
             print("进入命令行模式，使用真实RTSP流...")
-            rtsp_url = "rtsp://admin:a12345678@192.168.10.203:554/Streaming/Channels/4701"
+            rtsp_url = "替换为实际rtsp地址"
             print(f"正在连接RTSP流: {rtsp_url}")
             results = analyzer.analyze_rtsp_stream(rtsp_url, interval_seconds=5)
             analyzer.print_results(results)
@@ -1393,3 +1393,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
